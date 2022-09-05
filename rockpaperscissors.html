@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            background-color:red;
+            height: 33px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .b {
+            background-color:#00AA00;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>Choose your weapon!</header>
+    <div class="btn">
+        <button id="Rock">Rock</button>
+        <button id="Paper">Paper</button>
+        <button id="Scissors">Scissors</button>
+    </div>
+    <div class="b" data-el="no-click-handler">
+        <p>Your Choice:</p>
+        <p id = "playerChoice"></p>
+        <p>Result: </p>
+        <p id="computerChoice"></p>
+        <p>Player Score: 
+            <p id = "playerScore"></p>
+        </p>
+        <p>Computer Score:
+            <p id = "computerScore"></p>
+        </p>
+    </div>      
+    <div id = "gameOver"></div>
+    <script src="rocky.js"></script>
+</body>
+
+</html>
